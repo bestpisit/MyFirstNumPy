@@ -1,9 +1,10 @@
 import numpy as np
 
-x = np.array([[1,2],[3,4]])
-y = np.array([[1,1],[1,1]])
-print(x)
-print(y)
+A = np.array([[1,2],[3,4]])   # 2D array
+b = np.array([5,6])           # 1D array
 
-print(x*y); print()
-print(x@y)
+x = np.linalg.solve(A,b)      # ใช้ฟังก์ชัน linalg.solve() ในการหาคำตอบ
+print(x)
+
+x = np.linalg.inv(A) @ b      # หาคำตอบโดยคำนวณหาค่าของ A-inverse @ b
+print(x)
