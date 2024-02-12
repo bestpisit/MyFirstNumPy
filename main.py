@@ -1,9 +1,7 @@
 import numpy as np
+import math
 
-x = np.arange(1,10,0.5)
-y = x*10        # y = 10x
-z = 3*x**2      # z = 3x^2
-
-print(x)
-print(y)
-print(z)
+# broadcasting error
+x1 = np.array([[1,2],[3,4],[5,6]]) # shape (3,2)
+x2 = np.array([[1,2,3],[4,5,6]])   # shape (2,3)
+print(x1 - x2)
