@@ -1,7 +1,9 @@
 import numpy as np
 import math
 
-# broadcasting error
-x1 = np.array([[1,2],[3,4],[5,6]]) # shape (3,2)
-x2 = np.array([[1,2,3],[4,5,6]])   # shape (2,3)
-print(x1 - x2)
+x = np.arange(0,360,45)
+x = x * np.pi / 180
+y = np.sin(x)
+
+print(x)
+print(y)
